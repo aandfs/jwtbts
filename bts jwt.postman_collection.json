@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "7e490d03-a363-4736-95d0-442d60bb647c",
+		"name": "bts jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "aanss",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aanss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aanss",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/jwtbts/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "aans",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aans",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/jwtbts/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkalist Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJhYW5zIiwiQVBJX1RJTUUiOjE2ODMzNjEyNDR9.811l6uFmLrr0CZA2Uw8PnWap8bidBmOYxf0p466tVI8"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Laptop",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/jwtbts/checklist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checklist Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJhYW5zIiwiQVBJX1RJTUUiOjE2ODMzNjA5MTJ9.NQYhtNAwDiChK-HI4JChDs5mHMZJU1qcwTjUr3zbiEw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/jwtbts/checklist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checklist Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJhYW5zIiwiQVBJX1RJTUUiOjE2ODMzNjA5MTJ9.NQYhtNAwDiChK-HI4JChDs5mHMZJU1qcwTjUr3zbiEw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/jwtbts/checklist/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"checklist",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checklist Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJhYW5zIiwiQVBJX1RJTUUiOjE2ODMzNjA5MTJ9.NQYhtNAwDiChK-HI4JChDs5mHMZJU1qcwTjUr3zbiEw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/jwtbts/checklist/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"checklist",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checklist Get by Id and Item id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJhYW5zIiwiQVBJX1RJTUUiOjE2ODMzNjA5MTJ9.NQYhtNAwDiChK-HI4JChDs5mHMZJU1qcwTjUr3zbiEw"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/jwtbts/checklist/2/item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"jwtbts",
+						"checklist",
+						"2",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost/api_jwt_ci3",
+			"type": "string"
+		}
+	]
+}
